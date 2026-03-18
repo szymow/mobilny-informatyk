@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.4; color: #333; margin: 0; padding: 20px; }
+        .document { max-width: 800px; margin: auto; border: 1px solid #ccc; padding: 40px; background: white; }
+        .header { display: flex; justify-content: space-between; border-bottom: 2px solid #0d6efd; pb: 10px; mb: 20px; }
+        .company-info h2 { color: #0d6efd; margin: 0; }
+        .company-info p { margin: 2px 0; font-size: 0.9em; }
+        h1 { text-align: center; text-transform: uppercase; font-size: 1.5em; margin: 20px 0; background: #f8f9fa; padding: 10px; }
+        h3 { border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 25px; color: #0d6efd; font-size: 1.1em; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .field { margin-bottom: 10px; border-bottom: 1px dotted #ccc; padding-bottom: 5px; min-height: 20px; }
+        .label { font-weight: bold; font-size: 0.85em; color: #666; display: block; }
+        .checkbox-group { display: flex; gap: 15px; margin-top: 5px; }
+        .footer { margin-top: 50px; display: flex; justify-content: space-between; }
+        .signature-box { border-top: 1px solid #333; width: 250px; text-align: center; pt: 5px; font-size: 0.9em; }
+        .legal { font-size: 0.7em; color: #777; margin-top: 40px; text-align: justify; }
+        @media print { .document { border: none; padding: 0; } .btn-print { display: none; } }
+        .btn-print { display: block; width: 200px; margin: 20px auto; padding: 10px; background: #0d6efd; color: white; text-align: center; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<a href="#" class="btn-print" onclick="window.print(); return false;">WYDRUKUJ / ZAPISZ PDF</a>
+
+<div class="document">
+    <div class="header">
+        <div class="company-info">
+            <h2>Szymon Woyda</h2>
+            <p>Mobilny-Informatyk.pl</p>
+            <p>Tel: +48 571 061 910 </p>
+            <p>E-mail: serwis.mobilny.informatyk@gmail.com </p>
+        </div>
+        <div style="text-align: right">
+            <p><strong>Nr protokołu:</strong> .........................</p>
+            <p><strong>Data:</strong> .....................................</p>
+            <p><strong>Miejscowość:</strong> Łódź </p>
+        </div>
+    </div>
+
+    <h1>Protokół Przyjęcia Sprzętu</h1>
+
+    <div class="grid">
+        <div>
+            <h3>Zleceniodawca (Klient)</h3>
+            <div class="field"><span class="label">Imię i Nazwisko / Firma:</span></div>
+            <div class="field"><span class="label">Adres:</span></div>
+            <div class="field"><span class="label">Telefon:</span></div>
+        </div>
+        <div>
+            <h3>Opis Sprzętu</h3>
+            <div class="field"><span class="label">Urządzenie (Model/Marka):</span></div>
+            <div class="field"><span class="label">Numer Seryjny (S/N):</span></div>
+            <div class="field"><span class="label">Hasło do systemu:</span></div>
+        </div>
+    </div>
+
+    <h3>Stan techniczny i akcesoria</h3>
+    <div class="field" style="min-height: 60px;"><span class="label">Opis usterki i uwagi serwisowe:</span></div>
+    <div class="checkbox-group">
+        <span>Zasilacz: [ ] TAK [ ] NIE</span>
+        <span>Bateria: [ ] TAK [ ] NIE</span>
+        <span>Torba: [ ] TAK [ ] NIE</span>
+        <span>Inne: ...................</span>
+    </div>
+
+    <h3>Oświadczenia</h3>
+    <div class="legal">
+        1. Klient oświadcza, że jest właścicielem sprzętu lub działa z upoważnienia właściciela. 
+        2. <strong>Bezpieczeństwo danych:</strong> Klient potwierdza, że dokonał kopii zapasowej danych. Serwis nie ponosi odpowiedzialności za dane na nośnikach[cite: 155].
+        3. Szacunkowy koszt naprawy: ........................... zł. Klient zostanie poinformowany o zmianie kosztów przekraczającej 20%.
+        4. Na usługi serwisowe udzielana jest gwarancja rozruchowa 30 dni.
+    </div>
+
+    <div class="footer">
+        <div class="signature-box">Podpis Klienta</div>
+        <div class="signature-box">Podpis Serwisanta</div>
+    </div>
+</div>
+
+</body>
+</html>
