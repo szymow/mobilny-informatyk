@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --primary: #6c5ce7; /* Wormhole Purple */
+            --dark: #2d3436;
+            --light: #f9f9fb;
+        }
+        body { font-family: 'Segoe UI', sans-serif; color: #333; line-height: 1.6; padding: 0; margin: 0; background: #f0f2f5; }
+        .page { width: 210mm; min-height: 297mm; padding: 20mm; margin: 20px auto; background: white; box-sizing: border-box; border-top: 8px solid var(--primary); }
+        .header { display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { margin: 0; color: var(--primary); font-size: 18pt; text-transform: uppercase; }
+        .step { margin-bottom: 25px; display: flex; align-items: flex-start; }
+        .step-num { background: var(--primary); color: white; width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; font-weight: bold; margin-right: 15px; flex-shrink: 0; }
+        .alert { background: #fff4e5; border-left: 5px solid #ffa94d; padding: 15px; margin: 20px 0; font-size: 10pt; }
+        .footer { margin-top: 50px; text-align: center; font-size: 9pt; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div>
+            <h1>Bezpieczne Przekazywanie Haseł</h1>
+            <p style="margin:0; font-weight: bold; color: #555;">Szybka instrukcja dla Klienta (Bez zakładania konta)</p>
+        </div>
+        <div style="text-align: right; font-size: 9pt;">
+            Inżynier: <strong>Szymon Woyda</strong><br>
+            Metoda: End-to-End Encryption
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-num">1</div>
+        <div>
+            <strong>Otwórz stronę:</strong> Wejdź na <strong><a href="https://wormhole.app" style="color: var(--primary);">wormhole.app</a></strong>. Jest to bezpieczne narzędzie do szyfrowanego przesyłania danych, które nie wymaga rejestracji.
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-num">2</div>
+        <div>
+            <strong>Wgraj plik lub wpisz tekst:</strong> Możesz przesłać plik tekstowy z hasłami lub po prostu przeciągnąć notatkę. Wormhole automatycznie zaszyfruje dane jeszcze przed ich wysłaniem.
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-num">3</div>
+        <div>
+            <strong>Ustaw limity:</strong> Po wybraniu pliku/tekstu, kliknij w ikonę ustawień (kłódka/zegar). Wybierz: 
+            <ul style="margin: 5px 0;">
+                <li>Zniszcz po <strong>1 pobraniu</strong>.</li>
+                <li>Wygasaj po <strong>2 godzinach</strong>.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-num">4</div>
+        <div>
+            <strong>Wyślij link:</strong> Skopiuj wygenerowany link i prześlij go do mnie e-mailem na <strong>serwis.mobilny.informatyk@gmail.com</strong>.
+        </div>
+    </div>
+
+    <div class="alert">
+        <strong>⚠️ DLACZEGO TAK?</strong> Dzięki tej metodzie hasła nie zostają zapisane na serwerach pocztowych ani w "elementach wysłanych" Państwa skrzynki. Link wygaśnie natychmiast po moim odczytaniu, co gwarantuje 100% poufności.
+    </div>
+
+    <div class="footer">
+        Szymon Woyda IT | Bezpieczeństwo i Optymalizacja | +48 571 061 910
+    </div>
+</div>
+</body>
+</html>

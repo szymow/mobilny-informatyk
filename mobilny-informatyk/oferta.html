@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --primary: #002d5b;
+            --accent: #007bff;
+            --light: #f4f7f6;
+            --text: #333;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--text); margin: 0; padding: 0; line-height: 1.5; background: #fff; }
+        .page { width: 210mm; min-height: 297mm; padding: 20mm; margin: auto; box-sizing: border-box; position: relative; }
+        
+        /* Header */
+        .header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid var(--primary); padding-bottom: 10px; margin-bottom: 30px; }
+        .logo-area h1 { margin: 0; color: var(--primary); font-size: 28px; text-transform: uppercase; letter-spacing: 1px; }
+        .logo-area p { margin: 5px 0; font-weight: bold; color: var(--accent); }
+        .contact-info { text-align: right; font-size: 14px; }
+
+        /* Hero */
+        .hero { background: var(--light); padding: 25px; border-radius: 10px; margin-bottom: 30px; border-left: 5px solid var(--accent); }
+        .hero h2 { margin: 0 0 10px 0; color: var(--primary); font-size: 22px; }
+        .hero p { margin: 0; font-style: italic; }
+
+        /* Grid */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
+        h3 { color: var(--primary); border-bottom: 1px solid #ddd; padding-bottom: 5px; text-transform: uppercase; font-size: 16px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+
+        /* Pricing Table */
+        .pricing { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .pricing th { background: var(--primary); color: white; padding: 12px; text-align: left; }
+        .pricing td { border: 1px solid #ddd; padding: 12px; font-size: 14px; }
+        .pricing tr:nth-child(even) { background: #f9f9f9; }
+        .best-value { background: rgba(0, 123, 255, 0.1); font-weight: bold; border: 2px solid var(--accent) !important; }
+
+        /* Footer */
+        .footer { margin-top: 50px; text-align: center; border-top: 1px solid #eee; pt: 20px; font-size: 13px; color: #777; }
+        .cta { background: var(--primary); color: white; text-align: center; padding: 15px; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; border: none; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="header">
+        <div class="logo-area">
+            <h1>Szymon Woyda IT</h1>
+            <p>Mobilny Informatyk & Inżynier Systemowy</p>
+        </div>
+        <div class="contact-info">
+            tel: <strong>+48 571 061 910</strong><br>
+            email: <strong>szymon.woyda@gmail.com</strong><br>
+            www.mobilny-informatyk.pl
+        </div>
+    </div>
+
+    <div class="hero">
+        <h2>Twoja firma zasługuje na infrastrukturę klasy Enterprise</h2>
+        <p>Łączę doświadczenie z międzynarodowych korporacji (Fujitsu, Pekao FS) z elastycznością wsparcia lokalnego w Łodzi. Nie tylko naprawiam – zapobiegam awariom.</p>
+    </div>
+
+    <div class="grid">
+        <div>
+            <h3>Dlaczego ja?</h3>
+            <ul>
+                <li><strong>Magister Inżynier Informatyki:</strong> Twarda wiedza i specjalizacja w sieciach korporacyjnych.</li>
+                <li><strong>Certyfikat Cisco CCNA:</strong> Profesjonalna konfiguracja i bezpieczeństwo Twojej sieci.</li>
+                <li><strong>Podejście SRE:</strong> Wykorzystuję autorskie skrypty (Python/PowerShell) do monitoringu 24/7.</li>
+                <li><strong>Pełna Mobilność:</strong> Szybki dojazd do siedziby klienta na terenie Łodzi i okolic.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Obszary wsparcia</h3>
+            <ul>
+                <li>Administracja serwerami Windows/Linux.</li>
+                <li>Zautomatyzowany Backup danych (Local & Cloud).</li>
+                <li>Audyty bezpieczeństwa i "hardening" systemów.</li>
+                <li>Wsparcie zdalne (Helpdesk) i wizyty serwisowe.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Pakiety Stałej Opieki IT</h3>
+    <table class="pricing">
+        <thead>
+            <tr>
+                <th>Usługa</th>
+                <th>Pakiet MONITORING</th>
+                <th>Pakiet BIZNES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Przeznaczenie</td>
+                <td>Małe biura (do 5 osób)</td>
+                <td>Firmy dynamiczne (5-20 osób)</td>
+            </tr>
+            <tr>
+                <td>Monitoring 24/7</td>
+                <td>Dostępność sieci i serwera</td>
+                <td>Pełny audyt wydajności i logów</td>
+            </tr>
+            <tr>
+                <td>Kopie zapasowe</td>
+                <td>Raz dziennie (Cloud)</td>
+                <td>Zgodnie z RODO + retencja 30 dni</td>
+            </tr>
+            <tr>
+                <td>Wsparcie zdalne</td>
+                <td>1h w cenie / mies.</td>
+                <td>4h w cenie / mies.</td>
+            </tr>
+            <tr>
+                <td>Czas reakcji (SLA)</td>
+                <td>do 8h roboczych</td>
+                <td class="best-value">Priorytet (do 2h)</td>
+            </tr>
+            <tr>
+                <td><strong>CENA NETTO</strong></td>
+                <td><strong>299 PLN / mc</strong></td>
+                <td class="best-value"><strong>599 PLN / mc</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="cta">
+        DARMOWY AUDYT: Zadzwoń i sprawdź szczelność swojej infrastruktury bez zobowiązań!
+    </div>
+
+    <div class="footer">
+        Szymon Woyda IT | Inżynier Elektroniki i Telekomunikacji | Magister Informatyki<br>
+        <em>Uczestnik programu "Jaka to Melodia?" – komunikacja i technologia idą u mnie w parze.</em>
+    </div>
+</div>
+
+</body>
+</html>

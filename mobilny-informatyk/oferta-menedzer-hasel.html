@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --primary: #002d5b;
+            --secondary: #007bff;
+            --success: #28a745;
+            --light: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; margin: 0; padding: 0; }
+        .page { width: 210mm; min-height: 297mm; padding: 20mm; margin: auto; background: white; box-sizing: border-box; }
+        
+        .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        .logo h1 { margin: 0; color: var(--primary); font-size: 24pt; text-transform: uppercase; }
+        .logo p { margin: 0; color: var(--secondary); font-weight: bold; }
+        
+        .title-box { background: var(--light); padding: 30px; border-radius: 10px; margin-bottom: 30px; text-align: center; border: 1px solid #ddd; }
+        .title-box h2 { margin: 0; color: var(--primary); font-size: 20pt; }
+        
+        .section-title { color: var(--primary); border-left: 5px solid var(--secondary); padding-left: 15px; margin: 30px 0 15px 0; font-size: 14pt; text-transform: uppercase; }
+        
+        .benefit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .benefit-item { background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 8px; }
+        .benefit-item strong { color: var(--secondary); display: block; margin-bottom: 5px; }
+
+        .pricing-table { width: 100%; border-collapse: collapse; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .pricing-table th { background: var(--primary); color: white; padding: 15px; text-align: left; }
+        .pricing-table td { border: 1px solid #ddd; padding: 15px; }
+        .pricing-table tr:nth-child(even) { background: #fcfcfc; }
+        
+        .cta-box { background: var(--primary); color: white; padding: 25px; border-radius: 10px; text-align: center; margin-top: 40px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 9pt; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="header">
+        <div class="logo">
+            <h1>Szymon Woyda IT</h1>
+            <p>Cybersecurity & Infrastructure Engineer</p>
+        </div>
+        <div style="text-align: right; font-size: 10pt;">
+            Łódź, Marzec 2026<br>
+            +48 571 061 910
+        </div>
+    </div>
+
+    <div class="title-box">
+        <h2>Wdrożenie Firmowego Menedżera Haseł</h2>
+        <p>Bezpieczeństwo, porządek i eliminacja ryzyka wycieku danych w Twoim zespole.</p>
+    </div>
+
+    <p>Według statystyk, ponad 80% wycieków danych w firmach wynika ze stosowania słabych lub powtarzalnych haseł. Jako inżynier IT pomogę Twojej firmie wdrożyć standardy klasy Enterprise w prosty i przystępny sposób.</p>
+
+    <div class="section-title">Dlaczego Twój zespół potrzebuje menedżera haseł?</div>
+    <div class="benefit-grid">
+        <div class="benefit-item">
+            <strong>Koniec z "kartkami" i Excelami</strong>
+            Wszystkie dostępy (poczta, banki, panele) w jednym, bezpiecznym i szyfrowanym miejscu.
+        </div>
+        <div class="benefit-item">
+            <strong>Bezpieczne udostępnianie</strong>
+            Możliwość przekazywania haseł między pracownikami bez wysyłania ich mailem czy SMSem.
+        </div>
+        <div class="benefit-item">
+            <strong>Kontrola po odejściu pracownika</strong>
+            Błyskawiczne odebranie dostępów osobie kończącej współpracę jednym kliknięciem.
+        </div>
+        <div class="benefit-item">
+            <strong>Standardy RODO</strong>
+            Pełna zgodność z wymogami ochrony danych osobowych i audytami bezpieczeństwa.
+        </div>
+    </div>
+
+    <div class="section-title">Oferta Wdrożenia (Pakiet do 10 stanowisk)</div>
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th>Element usługi</th>
+                <th>Zakres prac</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Konfiguracja instancji</strong></td>
+                <td>Wybór i setup platformy (Bitwarden/1Password) oraz konfiguracja polisy haseł.</td>
+            </tr>
+            <tr>
+                <td><strong>Migracja danych</strong></td>
+                <td>Bezpieczny import haseł z przeglądarek i plików użytkowników.</td>
+            </tr>
+            <tr>
+                <td><strong>Szkolenie zespołu (1h)</strong></td>
+                <td>Instruktaż dla pracowników: jak generować silne hasła i korzystać z 2FA/MFA.</td>
+            </tr>
+            <tr>
+                <td><strong>Administracja (Start)</strong></td>
+                <td>Konfiguracja uprawnień, grup i bezpiecznych "Sejfów" (Vaults) dla działów.</td>
+            </tr>
+            <tr>
+                <td style="background: #eee;"><strong>KOSZT CAŁKOWITY (Netto)</strong></td>
+                <td style="background: #eee; font-weight: bold; font-size: 14pt; color: var(--primary);">999,00 PLN</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="cta-box">
+        Zabezpiecz swoją firmę już dziś. <br>
+        <strong>Zadzwoń i umów termin wdrożenia: +48 571 061 910</strong>
+    </div>
+
+    <div class="footer">
+        Szymon Woyda IT | Magister Inżynier Informatyki | CCNA | SRE Specialist<br>
+        <em>Oferta ma charakter informacyjny i nie stanowi oferty handlowej w rozumieniu Art. 66 par. 1 Kodeksu Cywilnego.</em>
+    </div>
+</div>
+
+</body>
+</html>

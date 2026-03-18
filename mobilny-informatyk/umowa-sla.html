@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root { --primary-color: #002d5b; --line-color: #ddd; }
+        body { font-family: 'Times New Roman', serif; line-height: 1.6; color: #333; margin: 0; padding: 0; font-size: 11pt; }
+        .page { width: 210mm; padding: 25mm; margin: auto; background: white; box-sizing: border-box; }
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; }
+        .header h1 { margin: 0; font-size: 18pt; color: var(--primary-color); text-transform: uppercase; }
+        
+        .contract-parties { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 30px; border: 1px solid #eee; padding: 15px; }
+        .party h3 { margin-top: 0; font-size: 12pt; text-decoration: underline; }
+        
+        h2 { font-size: 13pt; border-bottom: 1px solid var(--line-color); margin-top: 25px; color: var(--primary-color); }
+        .section-title { font-weight: bold; margin-top: 15px; }
+        
+        .sla-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .sla-table th, .sla-table td { border: 1px solid #ccc; padding: 8px; text-align: left; font-size: 10pt; }
+        .sla-table th { background: #f5f5f5; }
+
+        .signatures { display: flex; justify-content: space-between; margin-top: 60px; }
+        .sig-box { border-top: 1px solid #000; width: 200px; text-align: center; padding-top: 5px; font-size: 10pt; }
+        
+        .footer-note { font-size: 8pt; color: #777; margin-top: 40px; text-align: justify; }
+        @media print { .page { margin: 0; padding: 20mm; } }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="header">
+        <h1>Umowa Ramowa o Świadczenie Usług Informatycznych (SLA)</h1>
+        <p>Nr umowy: ......................... / 2026</p>
+    </div>
+
+    <p>Zawarta w dniu .................... w Łodzi pomiędzy:</p>
+
+    <div class="contract-parties">
+        <div class="party">
+            <h3>Zleceniobiorca</h3>
+            <strong>Szymon Woyda IT</strong><br>
+            Mobilny Informatyk<br>
+            NIP: 7282904643<br>
+            tel: +48 571 061 910<br>
+            serwis.mobilny.informatyk@gmail.com
+        </div>
+        <div class="party">
+            <h3>Zleceniodawca</h3>
+            <strong>..................................................</strong><br>
+            Adres: ............................................<br>
+            NIP: ................................................<br>
+            Reprezentowany przez:<br>
+            ........................................................
+        </div>
+    </div>
+
+    <h2>§1. Przedmiot Umowy</h2>
+    <p>1. Przedmiotem umowy jest świadczenie przez Zleceniobiorcę na rzecz Zleceniodawcy usług stałej opieki informatycznej, administracji systemami oraz wsparcia technicznego użytkowników (Helpdesk).<br>
+    2. Usługi będą świadczone w formie zdalnej, a w przypadkach koniecznych – w siedzibie Zleceniodawcy.</p>
+
+    <h2>§2. Zakres Usług i Poziom Obsługi (SLA)</h2>
+    <p>Zleceniobiorca zobowiązuje się do zachowania następujących czasów reakcji na zgłoszenia:</p>
+    <table class="sla-table">
+        <thead>
+            <tr>
+                <th>Priorytet Zgłoszenia</th>
+                <th>Definicja</th>
+                <th>Czas Reakcji (SLA)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>KRYTYCZNY</strong></td>
+                <td>Brak możliwości pracy całej firmy (awaria sieci, serwera)</td>
+                <td>do 2 godzin</td>
+            </tr>
+            <tr>
+                <td><strong>WYSOKI</strong></td>
+                <td>Utrudnienie pracy działu lub kluczowego pracownika</td>
+                <td>do 4 godzin</td>
+            </tr>
+            <tr>
+                <td><strong>STANDARDOWY</strong></td>
+                <td>Drobne usterki, prośby o konfigurację, zapytania</td>
+                <td>do 8 godzin</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>§3. Obowiązki Zleceniobiorcy</h2>
+    <p>1. Bieżący monitoring infrastruktury serwerowej i sieciowej.<br>
+    2. Nadzór nad poprawnością wykonywania kopii zapasowych (Backup).<br>
+    3. Instalacja poprawek bezpieczeństwa oraz dbanie o aktualność systemów operacyjnych.<br>
+    4. Dokumentowanie podjętych działań w bazie wiedzy Zleceniodawcy.</p>
+
+    <h2>§4. Poufność Danych (NDA)</h2>
+    <p>Zleceniobiorca zobowiązuje się do zachowania w tajemnicy wszelkich informacji technicznych, biznesowych i osobowych Zleceniodawcy, do których uzyska dostęp w trakcie realizacji Umowy, również po jej rozwiązaniu.</p>
+
+    <h2>§5. Wynagrodzenie</h2>
+    <p>1. Z tytułu świadczenia usług Zleceniodawca zapłaci Zleceniobiorcy miesięczny ryczałt w wysokości <strong>................ PLN netto</strong>.<br>
+    2. Faktura VAT wystawiana będzie do 5-go dnia każdego miesiąca z terminem płatności 7 dni.</p>
+
+    <div class="signatures">
+        <div class="sig-box">Zleceniodawca</div>
+        <div class="sig-box">Zleceniobiorca</div>
+    </div>
+
+    <div class="footer-note">
+        Dokument sporządzony w dwóch jednobrzmiących egzemplarzach. Szymon Woyda IT gwarantuje najwyższą jakość usług opartą na standardach SRE i certyfikacji Cisco CCNA.
+    </div>
+</div>
+
+</body>
+</html>

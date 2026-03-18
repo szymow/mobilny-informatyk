@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Arial', sans-serif; line-height: 1.4; color: #333; padding: 20px; font-size: 10pt; }
+        .page { width: 210mm; margin: auto; border: 1px solid #eee; padding: 20mm; box-sizing: border-box; }
+        .header { display: flex; justify-content: space-between; border-bottom: 2px solid #002d5b; padding-bottom: 10px; margin-bottom: 20px; }
+        .header h1 { font-size: 16pt; color: #002d5b; margin: 0; text-transform: uppercase; }
+        
+        .info-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        .info-table td { padding: 5px; border: 1px solid #ddd; width: 50%; }
+        
+        h2 { font-size: 12pt; background: #f4f7f6; padding: 5px; border-left: 4px solid #007bff; margin-top: 20px; }
+        
+        .creds-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .creds-table th, .creds-table td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        .creds-table th { background: #eee; font-size: 9pt; }
+        
+        .warning-box { border: 2px dashed #dc3545; padding: 15px; margin-top: 25px; background: #fff5f5; font-size: 9pt; }
+        .signatures { display: flex; justify-content: space-between; margin-top: 50px; }
+        .sig-box { border-top: 1px solid #000; width: 220px; text-align: center; padding-top: 5px; }
+        
+        .confidential { color: #dc3545; font-weight: bold; text-align: center; text-transform: uppercase; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="confidential">DOKUMENT ŚCIŚLE POUFNY</div>
+    
+    <div class="header">
+        <div>
+            <h1>Protokół Przekazania Dostępu IT</h1>
+            <p>Załącznik do Umowy SLA nr: .........................</p>
+        </div>
+        <div style="text-align: right; font-size: 9pt;">
+            Data: ....................<br>
+            Miejsce: Łódź
+        </div>
+    </div>
+
+    <table class="info-table">
+        <tr>
+            <td><strong>PRZEKAZUJĄCY (Klient):</strong><br>..................................................</td>
+            <td><strong>PRZYJMUJĄCY (Inżynier IT):</strong><br>Szymon Woyda IT</td>
+        </tr>
+    </table>
+
+    <p>Niniejszym strony potwierdzają przekazanie danych uwierzytelniających do kluczowych elementów infrastruktury teleinformatycznej:</p>
+
+    <h2>1. Infrastruktura Sieciowa (Routery, Switche, Wi-Fi)</h2>
+    <table class="creds-table">
+        <thead>
+            <tr>
+                <th>Urządzenie / Usługa</th>
+                <th>Adres IP / URL</th>
+                <th>Login / Użytkownik</th>
+                <th>Hasło / Klucz (lub Notatka)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Router Główny (Cisco/MikroTik)</td>
+                <td></td>
+                <td></td>
+                <td>[PRZEKAZANO USTNIE/W KOPERCIE]</td>
+            </tr>
+            <tr>
+                <td>Sieć Wi-Fi (SSID)</td>
+                <td>-</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Serwery i Systemy (Windows Server, Linux, Cloud)</h2>
+    <table class="creds-table">
+        <thead>
+            <tr>
+                <th>System / Rola</th>
+                <th>Host / Nazwa</th>
+                <th>Konto Admin</th>
+                <th>Status (np. MFA?)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Active Directory / Domena</td>
+                <td></td>
+                <td>Administrator</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Panel Hostingu / WWW</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Usługi Krytyczne (Backup, Monitoring, Poczta)</h2>
+    <table class="creds-table">
+        <thead>
+            <tr>
+                <th>Usługa</th>
+                <th>Dostawca</th>
+                <th>Login / E-mail</th>
+                <th>Uwagi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kopia Zapasowa (Backup)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box">
+        <strong>OŚWIADCZENIE:</strong> Przyjmujący zobowiązuje się do zachowania powyższych danych w tajemnicy, zgodnie z podpisaną Umową o Poufności (NDA). Zaleca się, aby po zakończeniu konfiguracji startowej, hasła zostały zmienione przez Zleceniobiorcę na unikalne i silne, a dostęp został zabezpieczony uwierzytelnianiem dwuskładnikowym (MFA/2FA), o ile system na to pozwala.
+    </div>
+
+    <div class="signatures">
+        <div class="sig-box">Podpis Przekazującego<br><small>(Pieczęć Firmy)</small></div>
+        <div class="sig-box">Podpis Przyjmującego<br><small>Szymon Woyda</small></div>
+    </div>
+</div>
+
+</body>
+</html>
